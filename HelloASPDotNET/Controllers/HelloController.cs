@@ -13,7 +13,7 @@ namespace HelloASPDotNET.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            string html = "<form method = 'post' action= '/hello/welcome'>"
+            //string html = "<form method = 'post' action= '/hello/welcome'>" +
             string html = "<form method = 'post' action = '/hello'>"  + 
                 "<input type = 'text' name='name' />" +
                 "<input type = 'submit' value = 'Greet Me!' />" +
