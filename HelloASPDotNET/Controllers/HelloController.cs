@@ -38,7 +38,8 @@ namespace HelloASPDotNET.Controllers
             //{value?}")]
         public IActionResult Welcome(string name = "World") //, string language)
         {
-            return Content("<h1>Welcome to my app, " + name + "!</h1>", "text/html");
+            ViewBag.person = name;
+            return View();
         }
 
         //public static CreateMessage(string name, string value)
