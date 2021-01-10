@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HelloASPDotNET.Controllers
 {
-    [Route("/helloworld")]
+    //[Route("/helloworld")]
     public class HelloController : Controller
     {
         //GET: /<controller>/
@@ -14,9 +14,7 @@ namespace HelloASPDotNET.Controllers
         public IActionResult Index()
         {
             //string html = "<form method = 'post' action= '/hello/welcome'>" +
-            string html = "<form method = 'post' action = '/hello'>"  + 
-                "<input type = 'text' name='name' />" +
-                "<input type = 'submit' value = 'Greet Me!' />" +
+           
             //"<label> Language: " +
             //"<select name = 'language'>" +
             //"<option value = '1' selected>English</option>" +
@@ -25,9 +23,7 @@ namespace HelloASPDotNET.Controllers
             //"<option value = '4' selected>Japanese</option>" +
             //"<option value = '5' selected>Mandarin</option>" +
             //"</select>" + "</label>" + 
-            "</form>";
-
-            return Content(html, "text/html");
+            return View();
         }
 
         //GET: /hello/welcome
